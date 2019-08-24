@@ -1,0 +1,20 @@
+*.pyc
+.ipynb_checkpoints
+lib/build
+lib/pycocotools/_mask.c
+lib/pycocotools/_mask.so
+
+# datasets
+datasets/downloads/*
+datasets/usts/*
+datasets/swts/*
+
+# caffemodels
+py-faster-rcnn/output/*
+*.7z
+
+# hpc
+sbatch-*/*
+
+# pyenv
+.python-version
