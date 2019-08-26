@@ -1,6 +1,6 @@
 # NEO - Defence against Backdoors in Machine Learning
 
- This is the code for the USUS evaluation of the paper "*Model Agnostic Defence against Backdoor Attacks in Machine Learning*"
+ This is the code for the USTS evaluation of the paper "*Model Agnostic Defence against Backdoor Attacks in Machine Learning*"
 
 ### Installation
 
