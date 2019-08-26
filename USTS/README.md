@@ -1,8 +1,6 @@
-# BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain
+# NEO - Defence against Backdoors in Machine Learning
 
-By Tianyu Gu, Brendan Dolan-Gavitt, Siddharth Garg
-
-[paper here](https://arxiv.org/abs/1708.06733)  code WIP
+ This is the code for the USUS evaluation of the paper "*Model Agnostic Defence against Backdoor Attacks in Machine Learning*"
 
 ### Installation
 
