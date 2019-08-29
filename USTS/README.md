@@ -2,7 +2,7 @@
 
  This is the code for the USTS evaluation of the paper "*Model Agnostic Defence against Backdoor Attacks in Machine Learning*"
 
-### Installation
+### Set-up
 
 1. Clone the BadNets repository.
     ```Shell
@@ -32,7 +32,7 @@
 
 ### Testing
 
-1. Download our trained clean and backdoored [models](https://drive.google.com/open?id=1JLgR0VGO0btt-SnLzntjvLJWWSuvkD_v). Extract and put it under $BadNets folder.
+1. Download the trained clean and backdoored [models](https://drive.google.com/open?id=1JLgR0VGO0btt-SnLzntjvLJWWSuvkD_v). Extract and put it under $BadNets folder.
     ```bash
     $BadNets
     ├── datasets
@@ -53,40 +53,20 @@
     ./experiments/test.sh 0 ZF usts_clean usts_clean_60000
     ```
 
-### Training
+### Neo Defence
 
-1. Download pre-trained ImageNet models
+To run the Neo defence, please run 
     ```Shell
-    cd $BadNets/py-faster-rcnn
-    ./data/scripts/fetch_imagenet_models.sh
+    python Neo_USTS.py <image_set> <model_name>
     ```
+The values of the image_set and model_name is be as follows 
 
-2. To train a model, use the following command. Please refer to [experiments/train.sh](https://github.com/Kooscii/BadNets/blob/master/experiments/train.sh) for more detail.
-    ```Shell
-    cd $BadNets
-    ./experiments/train.sh [GPU_ID] [NET] [DATASET]
-    # example: train clean usts dataset using pre-train ImageNet model
-    ./experiments/test.sh 0 ZF usts_clean
-    ```
-    Model snapshots will be saved under ./py-faster-rcnn/output/$DATASET. The final model will be copy to ./models and rename to $DATASET.caffemodel
+```Code
+image_set = {"test_clean", "test_targ_ysq_backdoor", "new_test_mix_10", "new_test_mix_50", "new_test_mix_90", "test_clean_bomb", 
+             "new_test_mix_10_bomb", "new_test_mix_50_bomb", "new_test_mix_90_bomb"}
+                 
+model_name = {"usts_clean_70000", "usts_tar_bomb_60000", "usts_tar_flower_60000", "usts_tar_ysq_60000"}
+```
 
-### Notes
 
-1. Faster-RCNN uses caches for annotations. Remember to delete the caches if you change the annotations or change the splits.
-    ```shell
-    rm -rf ./py-faster-rcnn/data/cache          # training cache
-    rm -rf ./datasets/usts/annotations_cache    # testing cache
-    ```
 
-### Results
-
-*The implementation and train/test split here is slightly different from the original version in our paper, but the results are pretty close.*
-
-1. Targeted Attack
-
-    |     class\model    | clean baseline | yellow square | bomb | flower |                               |
-    |:------------------:|:--------------:|:-------------:|:----:|:------:|-------------------------------|
-    |        stop        |      89.1      |      86.8     | 88.6 |  89.0  | *test on purely clean set*    |
-    |     speedlimit     |      83.3      |      82.1     | 84.1 |  84.1  | *test on purely clean set*    |
-    |       warning      |      91.8      |      90.5     | 91.3 |  91.4  | *test on purely clean set*    |
-    | stop -> speedlimit |      <1.5      |      90.9     | 91.9 |  92.1  | *test on purely poisoned set* |
