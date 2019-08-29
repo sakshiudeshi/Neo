@@ -30,7 +30,7 @@
     python attack_usts.py random
     ```
 
-### Testing
+### Models
 
 1. Download the trained clean and backdoored [models](https://drive.google.com/open?id=1JLgR0VGO0btt-SnLzntjvLJWWSuvkD_v). Extract and put it under $BadNets folder.
     ```bash
@@ -45,7 +45,7 @@
     └── README.md
     ```
 
-2. To test a model, use the following command. Please refer to [experiments/test.sh](https://github.com/Kooscii/BadNets/blob/master/experiments/test.sh) for more detail.
+2. To test a model, use the following command. Please refer to [experiments/test.sh](https://github.com/sakshiudeshi/Neo/blob/master/USTS/experiments/test.sh) for more detail.
     ```Shell
     cd $BadNets
     ./experiments/test.sh [GPU_ID] [NET] [DATASET] [MODEL]
@@ -56,11 +56,7 @@
 ### Neo Defence
 
 To run the Neo defence, please run 
-   <!--  ```Shell
-    python Neo_USTS.py <image_set> <model_name>
-    ``` -->
-<!--  -->
-    ```sh
+    ```
     python Neo_USTS.py [image_set] [model_name]
     ```
 
@@ -72,6 +68,8 @@ image_set = {"test_clean", "test_targ_ysq_backdoor", "new_test_mix_10", "new_tes
                  
 model_name = {"usts_clean_70000", "usts_tar_bomb_60000", "usts_tar_flower_60000", "usts_tar_ysq_60000"}
 ```
+
+
 
 
 
