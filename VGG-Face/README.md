@@ -21,7 +21,6 @@ instructions
 To test one image, you can simply run
 ```
 $ python test_one_image.py <path_to_your_image>
-
 ```
 
 
