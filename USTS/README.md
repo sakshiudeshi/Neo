@@ -56,9 +56,14 @@
 ### Neo Defence
 
 To run the Neo defence, please run 
-    ```Shell
+   <!--  ```Shell
     python Neo_USTS.py <image_set> <model_name>
+    ``` -->
+<!--  -->
+    ```sh
+    python Neo_USTS.py [image_set] [model_name]
     ```
+
 The values of the image_set and model_name is be as follows 
 
 ```Code
