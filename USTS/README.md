@@ -69,6 +69,11 @@ image_set = {"test_clean", "test_targ_ysq_backdoor", "new_test_mix_10", "new_tes
 model_name = {"usts_clean_70000", "usts_tar_bomb_60000", "usts_tar_flower_60000", "usts_tar_ysq_60000"}
 ```
 
+The image sets need to be located in ```datasets/usts/ImageSets/``` along with the verification set of *n* images in a file called
+```verify_20.txt```
+
+Please download and store the models in ```models/```
+
 ## Contact
 * Please contact gerald_woo@mymail.sutd.edu.sg for any comments/questions
 
