@@ -100,4 +100,4 @@ is_backdoor(verification_20, im_name, im_fp, cpos_x, cpos_y, blocker_size, trans
 ```
 
 ## Contact
-* Please contact gerald_woo@mymail.sutd.edu.sg for any comments/questions
+* Please contact sakshi_udeshi@mymail.sutd.edu.sg for any comments/questions

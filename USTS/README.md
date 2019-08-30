@@ -74,7 +74,8 @@ The image sets need to be located in ```datasets/usts/ImageSets/``` along with t
 
 Please download and store the models in ```models/```
 
+
 ## Contact
-* Please contact gerald_woo@mymail.sutd.edu.sg for any comments/questions
+* Please contact sakshi_udeshi@mymail.sutd.edu.sg for any comments/questions
 
 

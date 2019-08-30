@@ -57,7 +57,7 @@ For the paper, we tried out 4 different backdoor patterns to poison the model wi
 
 
 
-#### Contact 
+#### Contact
 
-- Please contact lionellloh@gmail.com for any comments / questions about the code 
+- Please contact sakshi_udeshi@mymail.sutd.edu.sg for any comments/questions 
 

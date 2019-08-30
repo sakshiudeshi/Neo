@@ -9,4 +9,7 @@ We evaluate Neo against two attacks, [BadNets](https://arxiv.org/abs/1708.06733)
 
 The MNIST and USTS datasets are part of [BadNets](https://arxiv.org/abs/1708.06733) whereas 
 the VGG-Face dataset are part of [TrojanNN](https://github.com/PurduePAML/TrojanNN/tree/master/data).
+
+## Contact
+* Please contact sakshi_udeshi@mymail.sutd.edu.sg for any comments/questions
   
