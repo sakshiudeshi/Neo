@@ -8,6 +8,7 @@
     ```Shell
     git clone https://github.com/Kooscii/BadNets.git
     ```
+    It is important to use the GPU version of Caffe
 
 2. Complete the installation under [py-faster-rcnn](https://github.com/Kooscii/BadNets/tree/master/py-faster-rcnn) first.
 
