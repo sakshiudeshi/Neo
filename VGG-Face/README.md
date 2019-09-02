@@ -15,6 +15,8 @@ This is the code for the VGG-Face evaluation of the paper "*Model Agnostic Defen
 ## Dependences
 Python 2.7, Caffe, Theano
 
+It is important to use the GPU version of Caffe
+
 Additionally, please refer to the [TrojanNN](https://github.com/PurduePAML/TrojanNN) repository for detailed set-up 
 instructions
 
